@@ -1,5 +1,4 @@
-const path = require('path');
-var webpack = require('webpack');
+import path from "path";
 module.exports = {
   devtool: 'inline-source-map',
   entry: [
