@@ -1,8 +1,8 @@
 import path from "path";
 module.exports = {
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
   entry: [
-    path.resolve(__dirname, 'src/index')
+    path.resolve(__dirname, 'src')
   ],
   target: 'web',
   output: {
@@ -21,7 +21,12 @@ module.exports = {
             loader: 'babel-loader',
           }
         ]
-      }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+
     ]
   },
 };
