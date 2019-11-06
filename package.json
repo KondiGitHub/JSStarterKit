@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
-    "start": "babel-node buildScripts/srcServer.js"
+    "start": "babel-node buildScripts/srcServer.js",
+    "lint": "esw webpack.config.* src buildScripts --color"
   },
   "dependencies": {
     "esm": "^3.2.25",

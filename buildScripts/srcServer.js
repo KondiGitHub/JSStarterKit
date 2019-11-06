@@ -5,7 +5,9 @@ import express from "express";
 import path from "path";
 import open from "open";
 import webpack from "webpack";
+/*eslint-disable */
 import config from "../webpack.config.dev";
+/*eslint-enable */
 
 const port = 3000;
 const app = express();
@@ -27,3 +29,5 @@ app.listen(port, function (err) {
     open('http://localhost:' + port);
   }
 });
+
+export default app;
