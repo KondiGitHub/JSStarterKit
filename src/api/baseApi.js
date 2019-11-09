@@ -4,5 +4,5 @@
 
 export function getBaseUrl() {
   const isDevelopment = window.location.hostname === 'localhost';
-  return isDevelopment ? 'http://localhost:3000/' : '/';
+  return isDevelopment ? 'http://localhost:3001/' : '/';
 }
